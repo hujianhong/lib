@@ -152,6 +152,7 @@ public class JarFile extends java.util.jar.JarFile {
 		return this.data;
 	}
 
+	@SuppressWarnings("resource")
 	@Override
 	public Manifest getManifest() throws IOException {
 		Manifest manifest = (this.manifest == null ? null : this.manifest.get());

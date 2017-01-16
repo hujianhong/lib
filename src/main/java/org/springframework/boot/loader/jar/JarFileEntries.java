@@ -66,6 +66,7 @@ class JarFileEntries implements CentralDirectoryVisitor, Iterable<JarEntry> {
 
 	private int[] positions;
 
+	@SuppressWarnings("serial")
 	private final Map<Integer, FileHeader> entriesCache = Collections
 			.synchronizedMap(new LinkedHashMap<Integer, FileHeader>(16, 0.75f, true) {
 
